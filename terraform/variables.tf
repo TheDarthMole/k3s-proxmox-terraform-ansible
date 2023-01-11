@@ -28,7 +28,9 @@ variable "pm_node_name" {
   default     = "pve"
 }
 
-variable "pvt_key" {}
+variable "pvt_key" {
+  default = ""
+}
 
 variable "num_k3s_masters" {
   default = 1
@@ -38,12 +40,21 @@ variable "num_k3s_masters_mem" {
   default = "4096"
 }
 
+variable "num_k3s_masters_cpu" {
+  default = 4
+}
+
+
 variable "num_k3s_nodes" {
   default = 2
 }
 
 variable "num_k3s_nodes_mem" {
   default = "4096"
+}
+
+variable "num_k3s_nodes_cpu" {
+  default = 4
 }
 
 variable "tamplate_vm_name" {}
@@ -61,5 +72,5 @@ variable "networkrange" {
 }
 
 variable "gateway" {
-  default = "192.168.3.1"
+  default = "192.168.0.1"
 }

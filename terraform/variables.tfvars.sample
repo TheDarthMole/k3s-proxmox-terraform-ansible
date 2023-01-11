@@ -1,19 +1,21 @@
-pm_host = "192.168.3.110"
-pm_password = "password"
-pm_node_name = "pve"
+pm_host = "proxmox.host.domain.tld"
+pm_password = "3n73r-y0ur-pr0xm0x-root-p455w0rd"
+pm_node_name = "pve01"
 pm_tls_insecure = true
-pvt_key = "~/.ssh/proxk3s"
 num_k3s_masters = 1
 num_k3s_masters_mem = 4096
+num_k3s_masters_cpu = 4
 num_k3s_nodes = 2
 num_k3s_nodes_mem = 4096
-tamplate_vm_name = "ubuntu-focal-cloudinit-template"
+num_k3s_nodes_cpu = 4
+tamplate_vm_name = "ubuntu-cloud"
+gateway = "192.168.0.1"
 master_ips = [
-  "192.168.3.81"
+  "192.168.0.81"
 ]
 worker_ips = [
-  "192.168.3.91",
-  "192.168.3.92",
-  "192.168.3.93",
-  "192.168.3.94",
+  "192.168.0.91",
+  "192.168.0.92",
+  "192.168.0.93",
+  "192.168.0.94",
 ]
