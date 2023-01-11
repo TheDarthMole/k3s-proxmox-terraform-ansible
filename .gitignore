@@ -11,6 +11,7 @@ terraform/terraform-plugin-proxmox.log
 
 # Local .terraform directories
 **/.terraform/*
+inventory/k3s-cluster
 
 # .tfstate files
 *.tfstate
